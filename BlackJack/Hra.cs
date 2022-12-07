@@ -2,16 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace BlackJack
 {
-    class Program
+    internal class Hra
     {
-        static void Main()
-        {
-            Hra Hra1 = new Hra();
-
-            
-        }
+        internal bool Game;
     }
 }
