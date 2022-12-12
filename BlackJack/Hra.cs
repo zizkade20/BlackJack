@@ -17,10 +17,16 @@ namespace BlackJack
 
         public void Loop()
         {
+            Console.WriteLine("Zadejte přezdívku:");
+            Console.Write("->");
+            string username = Console.ReadLine();
             while (Game)
-            {
-                Console.WriteLine("TOTO JE MENU:");
+            {   
+                Console.WriteLine("\nVítej " + username + "\n\n(P)LAY\n(Z)EBRICEK\n(P)RAVIDLA\n(O) HRE\n(E)XIT");
                 Console.ReadLine();
+
+                
+
             }
         }
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BlackJack
 {
-    internal class Balicek
+     internal class Balicek
     {
         internal List<string> Karty;
 
@@ -14,7 +14,20 @@ namespace BlackJack
         internal Balicek(List<string> _karty)
         {
             this.Karty = _karty;
-            
+                
         }
+
+        internal void Shuffle()
+        {
+
+        }
+
     }
+        
+
+        
+
+        
+
+    
 }

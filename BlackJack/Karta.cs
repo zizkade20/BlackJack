@@ -18,6 +18,9 @@ namespace BlackJack
             this.Hodnota = _hodnota;
             this.Barva = _barva;
         }
+
+
+
     }
 }
 

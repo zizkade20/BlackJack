@@ -8,17 +8,21 @@ namespace BlackJack
 {
     public class Hrac
     {
-        public string Jmeno;
+        public string Jmeno { get; set; }
+        //public List<Karta> Ruka { get; set; }
+        public int Skore { get; set; }
         public int Penize;
         public int Sazka;
 
         internal Hrac() { }
-        internal Hrac(string _jmeno, int _penize, int _sazka)
+        internal Hrac(string _jmeno, int _skore, int _penize, int _sazka)
         {
             this.Jmeno = _jmeno;
+            this.Skore = _skore;
             this.Penize = _penize;
             this.Sazka = _sazka;
         }
 
     }
+
 }
