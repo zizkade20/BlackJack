@@ -6,5 +6,8 @@ using System.Threading.Tasks;
 
 namespace BlackJack
 {
-    
+    public class Krupier
+    {
+
+    }
 }

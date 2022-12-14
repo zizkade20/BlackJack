@@ -12,6 +12,8 @@ namespace BlackJack
             Hra Hra1 = new Hra();
 
             Hra1.Loop();
+
+
         }
     }
 }
