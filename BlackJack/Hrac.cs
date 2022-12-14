@@ -10,15 +10,13 @@ namespace BlackJack
     {
         public string Jmeno { get; set; }
         //public List<Karta> Ruka { get; set; }
-        public int Skore { get; set; }
-        public int Penize;
+        public int Skore = 0;
+        public int Penize = 200;
 
         internal Hrac() { }
-        internal Hrac(string _jmeno, int _skore, int _penize, int _sazka)
+        internal Hrac(string _jmeno)
         {
             this.Jmeno = _jmeno;
-            this.Skore = _skore;
-            this.Penize = _penize;
         }
 
         internal void SetName()
@@ -27,6 +25,7 @@ namespace BlackJack
             Console.Write("->");
             string username = Console.ReadLine();
             Console.WriteLine("\nVítej " + username);
+            Hrac Hrac1 = new Hrac(username);
         }
         /*internal void DisplayName()
         {

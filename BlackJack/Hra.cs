@@ -32,7 +32,8 @@ namespace BlackJack
                 {
                     case "p":
                         Balicek Balicek1 = new Balicek();
-                        Balicek1.VypisBalicek();
+                        //Balicek1.VratKartu();
+                        
                         break;
                     case "z":
                         break;

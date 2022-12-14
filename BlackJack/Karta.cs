@@ -9,20 +9,20 @@ namespace BlackJack
 {
     internal class Karta
     {
-        internal List<int> Hodnota;
-        internal List<string> Barva;
+        internal string Hodnota;
+        internal string Barva;
 
         
-        internal Karta(List<int> _hodnota, List<string> _barva)
+        internal Karta(string _hodnota, string _barva)
         {
             this.Hodnota = _hodnota;
             this.Barva = _barva;
         }
 
-        internal void NaplnitBalicek() 
+        
+        internal string VratNazevKarty()
         {
-            
-
+            return Hodnota + Barva;
         }
 
 

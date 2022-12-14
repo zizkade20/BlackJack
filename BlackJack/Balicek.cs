@@ -10,54 +10,45 @@ namespace BlackJack
     {
         internal List<Karta> Deck;
 
-        internal Balicek()
-        {
-            Deck = new List<Karta>()
-            {
-                
-            };
-
-        }
-
-        
         internal void VytvoritBalicek()
         {
             List<Karta> Deck = new List<Karta>();
 
             List<string> symboly = new List<string>()
             {
-                "SRDCE", "KARY", "PIKY", "LISTY"
+                "♥", "♦", "♣", "♠"
             };
-            List<int> hodnoty = new List<int>()
+            List<string> hodnoty = new List<string>()
             {
-                1,2,3, 4, 5, 6, 7,8,9,10,11,12,13
+                "2", "3","4","5","6","7","8","9","10","J","Q","K","A",
             };
-            foreach (string i in symboly)
+            foreach (string symbol in symboly)
             {
-                foreach (int j in hodnoty)
+                foreach (string hodnota in hodnoty)
                 {
-                    Deck.Add(new Karta(hodnoty, symboly));
+                    Deck.Add(new Karta(hodnota, symbol));
+                    
                 }
             }
 
-        }
-
-        internal void VypisBalicek()
-        {
-            foreach(Karta karta in Deck)
+            /*
+            foreach (var i in Deck)
             {
-                Console.Write(karta + " ");
+                Console.WriteLine(i.VratNazevKarty());
             }
+            */
         }
-
-        /*
-        internal Balicek() { }
-        internal Balicek(List<Karta> _deck)
+        
+        internal void VratKartu()
         {
-            this.Deck = _deck;
-                
+            /*
+            List<Karta> Deck = new List<Karta>();
+
+            Deck.RemoveAt(0)
+            */
         }
-        */
+        
+        
         internal void Shuffle()
         {
 
